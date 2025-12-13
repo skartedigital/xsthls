@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>15 ANOS DA RAPHAELA</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <video id="video" autoplay muted playsinline></video>
+  <img id="overlay" src="moldura.png" alt="Moldura" />
+
+  <div id="buttons">
+    <button id="switch-camera" title="Trocar câmera">🔄</button>
+    <button id="capture" title="Tirar foto">📸</button>
+  </div>
+
+  <canvas id="canvas" style="display:none;"></canvas>
+
+  <div id="preview-container">
+    <img id="photo-preview" />
+    <button id="save-btn">Salvar na galeria</button>
+    <button id="retry-btn">Tirar outra</button>
+
+    <div id="instructions">
+      Se estiver no iPhone:<br>
+      Toque e segure a imagem e selecione “Salvar na Fototeca”.
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
